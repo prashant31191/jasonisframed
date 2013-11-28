@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">JasonIsFramed</string>
+    <string name="title_bar_main">Tutorial</string>
+    <string name="str_search">Searching</string>
+    <string name="str_production_url">http://www.bergenchessmates.com/test.json</string>
+    <string name="no_fuzz">No JSON data found.</string>
+    <string name="str_url">http://www.google.com/</string>
+
+</resources>

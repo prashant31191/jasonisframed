@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:background="@drawable/rowselector"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+            android:divider="#FFCC00"
+        android:paddingLeft="4dp" >
+
+        <ImageView
+            android:id="@+id/fuzz_graphic"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:contentDescription=" "
+            android:src="@drawable/blank" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/fuzz_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:layout_toRightOf="@+id/fuzz_graphic"
+            android:shadowColor="@color/black"
+            android:shadowDx="0"
+            android:shadowDy="0"
+			android:shadowRadius="0.5"
+            android:textColor="#777777"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/fuzz_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fuzz_id"
+            android:layout_marginLeft="4dip"
+            android:layout_toRightOf="@+id/fuzz_graphic"
+            android:text=" " >
+        </TextView>
+
+        <TextView
+            android:id="@+id/spacer"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text=" " >
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>
+
